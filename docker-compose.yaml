@@ -1,0 +1,13 @@
+services:
+  redis:
+    image: redis
+    container_name: redis
+    volumes:
+      - data:/data
+    ports:
+      - 6379:6379
+    restart: always
+volumes:
+  data:
+
+# docker exec -it redis redis-cli
